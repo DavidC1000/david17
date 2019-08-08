@@ -1,0 +1,550 @@
+<!doctype html>
+<html>
+<head>
+    <title>Pousada Daleste</title>
+    <meta charset="utf-8"/>
+    
+    <!-- define a viewport -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	
+	<!-- JQuery da galeria -->
+	<script type="text/javascript" src="js/jquery.js" ></script>
+	<script type="text/javascript" >
+
+		$(document).ready(function(){
+		$(".thumbnail").click(function(){
+		var address= $(this).attr("src");
+		$("#popup").fadeIn("slow");
+		$("#lightbox").attr("src",address);
+		});
+		$("#close").click(function(){
+		$("#popup").fadeOut("fast");
+		});
+		});
+	</script
+	
+    
+    <!-- inserindo css do Bootstrap -->
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" media="all" />
+	
+	<!-- inserindo css do Font Awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+	<!-- Css personlizado -->
+	<link rel="stylesheet" href="css/estilo.css" media="all">
+	<style>
+	.fundonav {
+	background-color: #1E90FF;
+	}
+
+</style>
+</head>
+    
+<body>
+
+
+		<nav class="navbar navbar-inverse fundonav">
+				<div class="container-fluid">
+				  <!-- Cabeçalho do menu -->
+				  <div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					  <span class="sr-only">Toggle navigation</span>
+					  <span class="icon-bar"></span>
+					  <span class="icon-bar"></span>
+					  <span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">Pousada Daleste</a>
+				  </div
+			  
+				  <!-- itens do menu -->
+				  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+					  <li><a href="#quemsomos">Pousada</a></li>
+						<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Destinos<span class="caret"></span></a>
+									<ul class="dropdown-menu">
+									<li><a href="#angra dos reis">Angra dos Reis</a></li>
+									</ul>
+								  </li>
+			  
+						<li><a href="#depoimentos">Depoimentos</a></li>
+						<li><a href="#galeria">Galeria</a></li>
+						<li><a href="#faleconosco">Fale conosco</a></li>
+					</ul>
+			  
+				  </div><!-- /.navbar-collapse -->
+			    </div><!-- /.container-fluid -->
+	    </nav>
+
+			  <!-- Slider da aplicação -->
+    <div class="divslider" style="background-color:#1E90FF;"/>
+			<div class="container-slider">
+				<div class="col-xs-12 hidden-xs">
+					<div id="sliderprincipal" class="carousel slide" data-ride="carousel" data-interval="5000" style="width:100%;">
+						
+						<ol class="carousel-indicators">
+							<li class="active" data-target="#sliderprincipal" data-slide-to="0"></li>
+							<li data-target="#sliderprincipal" data-slide-to="1"></li>
+							<li data-target="#sliderprincipal" data-slide-to="2"></li>
+				 			<li data-target="#sliderprincipal" data-slide-to="3"></li>
+						</ol>
+		
+								<div class="carousel-inner" role="listbox">
+		
+									<div class="item active">
+										<img src="img/pousada01.jpg" alt="Imagem slider 01" style="width: 100%;" />
+									</div>
+			
+									<div class="item">
+										<img src="img/pousada02.jpg" alt="Imagem slider 02" style="width: 100%;" />
+									</div>
+			
+									<div class="item">
+										<img src="img/pousada03.jpg" alt="Imagem slider 03" style="width: 100%;" />
+									</div>
+									
+									<div class="item">
+										<img src="img/pousada04.jpg" alt="Imagem slider 04" style="width: 100%;" />
+									</div>
+									
+									<div class="item">
+										<img src="img/pousada05.jpg" alt="Imagem slider 05" style="width: 100%;" />
+									</div>
+									
+									<div class="item">
+										<img src="img/pousada06.jpg" alt="Imagem slider 06" style="width: 100%;" />
+									</div>
+								</div>
+						
+								<!-- Controles -->
+	
+							  <a class="left carousel-control" href="#sliderprincipal" role="button" data-slide="prev">
+								<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+								<span class="sr-only">Anterior</span>
+							  </a>
+	
+							  <a class="right carousel-control" href="#sliderprincipal" role="button" data-slide="next">
+								<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+								<span class="sr-only">Próximo</span>
+							  </a>
+					</div>
+				</div>
+			</div>
+	</div>
+		
+                              <!-- Fim do slider da aplicação -->​
+		
+		<div class="row">
+			<div class="col-xs col-sm-12 col-md-4 col-lg-4">
+				<div class="thumbnail">
+					<div>
+						<i class="fa fa-ship fa-4x" aria-hidden="true">
+
+						</i>
+					</div>
+
+					<div class="caption">
+						<h3>Passeios</h3>
+						<p>Aqui você encontra as melhores ofertas e oportunidades de passeios</p>
+						<p><a href="https://angradosreisturismo.com.br/?gclid=EAIaIQobChMImPbf3b6r4wIVlAqRCh1NDAhrEAAYByAAEgIyOPD_BwE" target="blank" class="btn btn-success" role="button">Pesquisar</a></p>
+					</div>
+					
+				</div>
+			</div>
+
+			<div class="col-xs col-sm-12 col-md-4 col-lg-4">
+					<div class="thumbnail">
+						<div>
+							<i class="fas  fa-utensiles fa-4x" aria-hidden="true">
+	
+							</i>
+						</div>
+	
+						<div class="caption">
+							<i class="fas fa-utensils fa-4x"></i>
+							<h3>Restaurantes</h3>
+							<p>Os melhores restaurantes com os melhores preços e os melhores  cardápios</p>
+							<p><a href="https://www.blogvambora.com.br/restaurantes-em-angra-dos-reis-ilha-grande/" target="blank" class="btn btn-success" role="button">Pesquisar</a></p>
+						</div>
+						
+					</div>
+				</div>
+
+				<div class="col-xs col-sm-12 col-md-4 col-lg-4">
+						<div class="thumbnail">
+							<div>
+								<i class="fa fa-car fa-4x" aria-hidden="true">
+		
+								</i>
+							</div>
+		
+							<div class="caption">
+								<h3>Carros</h3>
+								<p>Aqui você encontra as melhores ofertas e oportunidades de veiculos para locação</p>
+								<p><a href="https://www.localizahertz.com/others/en-us" target="blank" class="btn btn-success" role="button">Pesquisar</a></p>
+							</div>
+							
+						</div>
+					</div>
+			
+			
+
+		</div>
+
+	<!--- área de seleção de destino --->
+<div class="row linhaCompra">
+	<div class="col-xs-12 col-sm-12 col-md-12">
+	<button class="btn btn-info  col-xs-12 col-sm-12 col-md2 col-lg-2">
+		   <div style="float:left;">
+		   <i class="fas fa-suitcase-rolling fa-2x" aria-hidden="true"></i>
+		   </div>  
+	
+	<div>
+	Hospedagem
+	   <br/>
+	  
+	  
+	</div>
+	</button>
+	<input class="col-xs-12 col-sm-12 col-md-3 col-lg-3 camposCompra" type="date" name="origem" placeholder="Digite a origem" />
+   
+
+	<input class="col-xs-12 col-sm-12 col-md-3 col-lg-3 camposCompra" type="time" name="origem" placeholder="Digite o destino" />
+
+   
+   <button class="btn btn-info  col-xs-12 col-sm-12 col-md3 col-lg-3">
+		   <div style="float:left;">
+		   <i class=" fa fa-clock-o fa-2x" aria-hidden="true"></i>
+		   </div>  
+	
+	<div class="botaoCompraLegenda">
+	   Fazer<br/>
+	   Ckeck-in
+	  
+	</div>
+	</button>
+
+   
+   
+   </div>
+</div>
+<!--- fim da área de destino --->
+
+<!---  área de conteúdo do site --->
+<section id="quemsomos">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="page-header">
+					<h2>Quem Somos</h2>
+				</div>
+
+				<figure class="col-xs-12 col-sm-5 col-md-5 col-lg-5">
+					<img src="https://thumbcdn-z.hotelurbano.net/CD50tWTBjVB3hiK1siCxDXeijA0=/https://static.hotelurbano.com/reservas/prod0/0/312/57a1165e60ccb_pousada-chamame.jpg" height="300" width="400" />
+				</figure>
+
+				<div class="col-xs-12 col-sm-7 col-md-7 col-lg-7">
+					<p>A Pousada Daleste fica na Praia da Biscaia, em Angra dos Reis, e oferece piscina em cascata, academia e restaurante à beira-mar. Os quartos dispõem de TV a cabo e Wi-Fi. Além disso, o estacionamento está disponível gratuitamente. As acomodações da Daleste possuem frigobar, cofre e telefone. Também incluem ar-condicionado e ventilador de teto. Alguns quartos dispõem de varanda com vistas do mar. Você pode usufruir da sala de TV ou relaxar na sauna a vapor. As crianças podem se divertir no parquinho infantil. Os serviços de lavanderia podem ser organizados por um custo adicional. O Wi-Fi está disponível por um custo adicional por estadia. O balcão de turismo oferece viagens de barco e passeios turísticos na cidade vizinha de Paraty. O serviço de translado do Rio de Janeiro para Angra dos Reis pode ser organizado. Você pode desfrutar de aperitivos e pratos à la carte a base de peixes, carnes e massas no restaurante. Além disso, o bar oferece refrigerante, cervejas e coquetéis de frutas, que podem ser desfrutadas na praia. A Pousada Daleste fica a 71 km da cidade histórica de Paraty e a 157 km do Rio de Janeiro.
+
+-ocultar</p>
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+</section>
+
+<section id="angra dos reis">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="page-header">
+						<h2>Angra dos Reis</h2>
+					</div>
+	
+					<figure class="col-xs-12 col-sm-5 col-md-5 col-lg-5">
+						<img src="https://www.altoastral.com.br/wp-content/uploads/2016/12/angra-dos-reis-750x500.jpg" height="300" width="440" />
+					</figure>
+	
+					<div class="col-xs-12 col-sm-7 col-md-7 col-lg-7">
+					
+						<h3>Angra dos Reis</h3>
+						
+						<p>Angra dos Reis tem 365 ilhas, com mar verde-água, areia branquinha e vegetação de Mata Atlântica – a mais ilustre delas é a Ilha Grande. Por causa disso, a cidade adaptou-se a uma vida insular, em que as ilhas são uma espécie de extensão dos bairros: a Gipoia é boa para badalação durante o dia, Itanhangá durante a noite, e por ai vai. No continente, entretanto, o cenário não é tão paradisíaco (há favelas e bairros com infraestrutura precária), o que faz com que pouca gente ouse explorar a região. Mas vale conhecer a pracinha do Mercado de Peixe e o Museu de Arte Sacra.
+						
+							   </p>
+					</div>
+	
+				</div>
+	
+			</div>
+		</div>
+	</section>
+					<section id="depoimentos">
+						<div class="container">
+							<div class="row">
+								<div class="col-xs-12">
+									<div class="page-header">
+										<h2 style="test-aling:center;">Depoimentos</h2>
+									</div>
+
+									<div class="container">
+										<div class="row">
+											<div class="col-xs-12 col-sm-4 col-md-3">
+												
+												<div class="thumbnail" style="background-color: #eee ">
+													<img src="img/rostos/01.jpg" alt="">
+												</div>
+
+													  <div class="caption"><p style="font-style:oblique;">A baia de Ilha Grande é com certeza um dos lugares mas paradisíacos do Brasil,imperdivél para quem adora praia. </p>
+
+													  </div>
+
+											</div>
+
+											<div class="col-xs-12 col-sm-4 col-md-3">
+												
+													<div class="thumbnail" style="background-color: #eee ">
+														<img src="img/rostos/02.jpg" alt="">
+													</div>
+	
+														  <div class="caption"><p style="font-style:oblique;"> conhecer bem toda a exuberância da região não tem nada melhor que alugar uma lancha com a família ou os amigos e visitar todas as praias e ilhas em grande estilo.  </p>
+	
+														  </div>
+	
+												</div>
+
+												<div class="col-xs-12 col-sm-4 col-md-3">
+												
+														<div class="thumbnail" style="background-color: #eee ">
+															<img src="img/rostos/03.jpg" alt="">
+														</div>
+		
+															  <div class="caption"><p style="font-style:oblique;"> Lugar perfeito, já é minha segunda visita e com certeza voltarei mais vezes. Pessoas atenciosas e dispostas a nos dar qualquer informação, a limpeza é impecável, nada a reclamar. Dinei e Dona Carmem obrigada pela recepção!
+ </p>
+		
+															  </div>
+		
+													</div>
+
+													<div class="col-xs-12 col-sm-4 col-md-3">
+												
+															<div class="thumbnail" style="background-color: #eee ">
+																<img src="img/rostos/04.jpg" alt="">
+															</div>
+			
+																  <div class="caption"><p style="font-style:oblique;">Gostaria de agradecer o atendimento desde o inicio, a atenção que nos foi dada,o tratamento cordial,a educação e a confiabilidade do Sr.Dinei.
+Dinei, parabéns p vc e por tudo já escrito, pela limpeza e organização da pousada, a atenção dos funcionários e para a sra. que faz um bolo de milho maravilhoso. Nota 10 p vcs !! Sempre os indicarei à família e amigos e voltarei sempre que possível.
+Abraços em todos!!
+Kleber Gusmão </p>
+			
+																  </div>
+			
+														</div>
+									
+										</div>	
+								
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</section>
+
+		
+	<!--- início da galeria --->
+	<section id="galeria">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="page-header">
+						<h2>Galeria</h2>
+					</div>
+
+				</div>
+
+			</div>
+			<div>
+				<img src="http://www.pousadadaleste.com.br/images/2018122111495801.jpg" class="thumbnail" width="220" style="float:left;" alt="">
+				<img src="http://www.pousadadaleste.com.br/images/pousada_daleste_angra_dos_reis_praia_4.jpg" class="thumbnail" width="290" style="float:left;" alt="">
+				<img src="http://www.3btour.com.br/wp-content/uploads/2018/05/angra-dos-reis-2.jpg" class="thumbnail" width="390" style="float:left;" alt="">
+				
+				
+			</div>
+		</div>
+		
+	</section>
+	 
+	<div id="popup">
+		<div id="center">
+			<img id="lightbox" src="img/01.jpg" alt=""/>
+			<img id="close" src="img/close.png" alt="close">
+		</div>
+
+	</div>
+
+	<!--- fim da galeria --->
+	
+	
+<!-- inicio do formulário-->
+<section id="faleconosco">
+   <div class="container">
+        <div class="row">
+   <div class="col-xs-12">
+       <div class="page-header">
+	      <h2>Fale conosco</h2>
+	   
+   </div>
+   
+   <div class="col-xs-12">
+       <form class="form-horizontal">
+	    <div class="form-group has-info">
+	   <label for="name" class="col-xs-2 control-label">
+	        Nome Completo:
+	   </label>
+	   
+	   <div class="col-xs-10">
+	        <input type="text" class="form-control" id="nome"/>
+		 
+                                    </div>
+                                </div> 
+								
+				           <p>&nbsp;</p>
+						   
+			           <div class="form-group has-info">
+	               <label for="email" class="col-xs-2 control-label">
+	            E-mail:
+				
+	    </label>
+			   
+           <div class="col-xs-10">
+       <input type="email" class="form-control" id="email"/>
+		 
+                            </div>
+                </div> 
+				
+			       <p>&nbsp;</p>
+				   
+		   <div class="form-group">
+	   <label for="assunto" class="col-xs-2 control-label">
+	        Assunto:
+   </label>
+	
+<div class="col-xs-10">
+   <select class="form-control" id="assunto">
+   <option></option>
+   <option>Elogio</option>
+   <option>Reclamação</option>
+   <option>Cambio</option>
+   <option>Cotação de preços</option>
+   <option>Outros assuntos</option>
+</select>
+		 
+                                    </div>
+                               </div> 
+		                  
+						  <p>&nbsp;</p>
+				       
+					   <div class="form-group">
+	               <label for="name" class="col-xs-2 control-label">
+	                     E nosso cliente:
+	           </label>
+			   
+	           <div class="col-xs-10 radio">
+	       <label class="checkbox-line">
+	    <input type="radio" name="cliente" id="id1" value="sim">Sim </label>
+			
+			<span>&nbsp;</span>
+	    
+		<label class="checkbox-line">
+        <input type="radio" name="cliente" id="id2" value="Não">Não </label>	   
+		 
+                                          </div> 
+                                   </div> 
+				           
+						   <p>&nbsp;</p>
+					    
+						<div class="form-group has-info">
+	               <label for="name" class="col-xs-2 control-label">
+	                      Mensagem:
+	    </label>
+				
+	<div class="col-xs-10">
+      <textarea class="form-control" id="mansagem" rows="8" style="resize:nome;"></textarea>
+		 
+		 
+   </div>
+</div>  
+                      
+					 <p>&nbsp;</p>
+					 
+					 <div class="form-group">
+					 <div class="col-xs-offset-2 col-xs-2">
+					 <button type="submit" class="btn btn-success">
+					 Enviar Formulário
+					 </button>
+					 </div>
+					 
+					 <div class="col-xs-2">
+					 <button type="reset" class="btn btn-success">
+					 Limpar
+					 
+					 </button>
+					 </div>
+					 </div>
+					 
+	               </form>   
+	           </div>	
+           </div>
+       </div>
+    </div> 
+
+
+</section> 
+
+<!--final de formulário--> 
+
+
+<!--inicio dofooter-->
+
+<footer>
+   <div class="row">
+       <div class="col-xs-12">
+	    <strong>Pousada Daleste:</strong>Av Antonio Bartholdo da Silva Jordão, S/N Praia da Biscaia Angra Dos Reis Rio de Janeiro Brasil - 23916760
+<br/>
+		Tel:40207746<br/>
+		 E-mail: pousada@daleste.com.br
+      
+	   </div>
+	   
+   </div>
+</footer>
+
+<!-- final do footer-->
+   
+   
+   
+   
+
+
+
+<!--- fim da área de conteúdo --->
+
+
+	
+	
+	<!-- script JQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	
+	<!-- inserindo JavaScript do Bootstrap -->
+	<!-- Última versão JavaScript compilada e minificada -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	
+	
+</body>
+</html>
+
+
+
+
